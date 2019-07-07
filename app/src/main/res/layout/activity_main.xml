@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_ID"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_toRightOf="@id/lbl_ID"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/lbl_ID"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_name"
+        android:id="@+id/txt_name"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/txt_ID"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adress"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/lbl_name"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_address"
+        android:layout_toRightOf="@id/lbl_address"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/txt_name"
+        />
+
+
+
+    <TextView
+        android:id="@+id/lbl_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tell"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/lbl_address"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_tel"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@id/lbl_tel"
+        android:layout_below="@id/txt_address"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:onClick="submit"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reset"
+        android:onClick="reset"
+        android:text="@string/reset"
+       android:layout_alignParentBottom="true"
+     
+        android:layout_toRightOf="@id/btn_submit"
+        />
+
+
+</RelativeLayout>

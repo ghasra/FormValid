@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FormValid</string>
+    <string name="submit">submit</string>
+    <string name="tell">tell</string>
+    <string name="reset">reset</string>
+    <string name="name">name</string>
+    <string name="id">ID</string>
+</resources>
